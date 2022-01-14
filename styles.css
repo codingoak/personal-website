@@ -6,27 +6,48 @@ body:not(footer) {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
-  background-color: rgba(255, 235, 205, 50%);
+  background-color: rgba(0, 138, 138, 30%);
   color: rgba(0, 0, 0, 80%);
-  max-width: 1000px;
-  margin: 2rem auto;
+  margin: 1.5rem auto 2rem;
   padding: 2rem;
 }
 
 h1, h2, h3 {
+  font-weight: 700;
   margin-top: 1rem;
   text-align: center;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+#line {
+  height: 1px;
+  width: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  margin: -1rem auto 1.5rem;
+  background-color: rgba(0, 0, 0, 60%);
+}
+
+#job {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -1rem;
 }
 
 figure {
   margin: auto;
-  padding: 0 1rem;
+  padding: 1rem;
+  max-width: 700px;
+  min-width: 200px;
 }
 
-section:not(#biography) {
+section {
   border-bottom: 1px solid rgba(0, 0, 0, 20%);
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+#biography {
+  padding-bottom: 2rem;
 }
 
 ul {
@@ -52,8 +73,6 @@ p {
 }
 
 #tech-stack {
-  border-top: 1px solid rgba(0, 0, 0, 7%);
-  border-bottom: 1px solid rgba(0, 0, 0, 20%);
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -67,7 +86,7 @@ p {
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .thin {
@@ -76,26 +95,43 @@ p {
 
 /* Navigation */
 
+nav {
+  font-size: 1rem;
+  margin-left: -2rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 80%);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.button {
-  background-color: #0000009c;
-  color: rgba(255, 235, 205, 80%);
-  padding: 5px 10px;
-  margin-bottom: 2rem;
-  border-radius: 3px;
-  border: 1px solid rgba(255, 235, 205, 50%);
 
+
+nav > ul > li {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+
+
+.button {
+  background-color: rgb(87, 57, 57);
+  color: lightsalmon;
+  margin-top: 1rem;
+  padding: 6px 10px;
+  border-radius: 7px;
+  border: 1px solid rgb(95, 95, 95);
 }
 
 .button:hover {
-  background-color: rgba(255, 235, 205, 50%);
-  color:  #0000009c;
-  border: 1px solid #0000009c;
+  border: 1px solid lightcyan
 }
 
 /* Figure */
@@ -103,7 +139,7 @@ nav ul {
 figure {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 7%);
 }
 
@@ -127,7 +163,7 @@ figure > img {
 /* Footer */
 
 footer {
-  margin-top: 2rem;
+  margin: 1rem 0 3rem 0;
   text-align: center;
 }
 
