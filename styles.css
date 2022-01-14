@@ -18,6 +18,34 @@ h1, h2, h3 {
   text-align: center;
 }
 
+section:not(#biography) {
+  border-bottom: 1px solid rgba(0, 0, 0, 20%);
+}
+
+#tech-stack {
+  border-top: 1px solid rgba(0, 0, 0, 7%);
+  border-bottom: 1px solid rgba(0, 0, 0, 20%);
+  text-align: center;
+}
+
+.inline-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: inside;
+  white-space: nowrap;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.thin {
+  height: 1px;
+}
+
+/* Navigation */
+
 .main-navigation {
   display: flex;
   justify-content: space-evenly;
@@ -40,11 +68,13 @@ h1, h2, h3 {
   border: 1px solid #0000009c;
 }
 
+/* Figure */
+
 figure {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 10%);
+  border-bottom: 1px solid rgba(0, 0, 0, 7%);
 }
 
 figure > img {
@@ -53,43 +83,15 @@ figure > img {
   height: auto;
 }
 
-section:not(#biography) {
-  border-bottom: 1px solid rgba(0, 0, 0, 20%);
-}
-
-#tech-stack {
-  border-top: 1px solid rgba(0, 0, 0, 10%);
-  text-align: center;
-}
-
-.inline-flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: inside;
-  white-space: nowrap;
-}
-
-.connect {
-  margin-top: 10px;
-  padding-top: 2rem;
-}
-
-.bold {
-  font-weight: 700;
-}
+/* Link Logos */
 
 .logo {
   margin: 10px;
   display: inline-block;
 }
 
-.thin {
-  height: 1px;
-}
-
 #kotlin {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 /* Footer */
