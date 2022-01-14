@@ -16,10 +16,30 @@ body:not(footer) {
 h1, h2, h3 {
   margin-top: 1rem;
   text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section:not(#biography) {
   border-bottom: 1px solid rgba(0, 0, 0, 20%);
+}
+
+ul {
+  margin-right: 0.5rem;
+  margin-left: -2rem;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 #tech-stack {
@@ -90,7 +110,7 @@ figure > img {
   display: inline-block;
 }
 
-#kotlin {
+#kotlin-logo {
   margin-left: 15px;
 }
 
