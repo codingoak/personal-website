@@ -3,17 +3,17 @@
 }
 
 body:not(footer) {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
-  background: linear-gradient(90deg, rgba(0, 138, 138, 30%),rgba(0, 138, 138, 7%), rgba(0, 138, 138, 30%));
+  background: linear-gradient(90deg, rgba(0, 138, 138, 7%),rgba(0, 138, 138, 1%), rgba(0, 138, 138, 7%));
   color: rgba(0, 0, 0, 80%);
-  margin: 5rem auto 2rem;
+  margin: 8rem auto 2rem;
   padding: 2rem;
 }
 
 h1, h2, h3 {
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 1rem;
   text-align: center;
 }
@@ -35,13 +35,13 @@ h1, h2, h3 {
 }
 
 section {
+  font-family: 'Open Sans', sans-serif;
   max-width: 800px;
   margin: 1rem auto;
   padding: 0 0.5rem;
   border: 1px solid rgba(0, 0, 0, 20%);
   border-radius: 1rem;
-  xbackground-color: rgba(0, 138, 138, 30%);
-  background: linear-gradient(90deg, rgba(0, 138, 138, 7%), rgba(0, 138, 138, 20%), rgba(0, 138, 138, 7%));
+  background: linear-gradient(90deg, rgba(0, 138, 138, 3%), rgba(0, 138, 138, 6%), rgba(0, 138, 138, 3%));
 }
 
 #biography {
@@ -60,7 +60,6 @@ li {
 }
 
 p {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
@@ -88,14 +87,19 @@ p {
   font-weight: 600;
 }
 
+.block {
+  display: block;
+}
+
 /* Navigation */
 
 nav {
   font-size: 1rem;
   margin-left: -2rem;
   overflow: hidden;
-  background-color: black;
-  position: fixed;
+  background-color: #151b29;
+  display: block;
+  position: absolute;
   top: 0;
   width: 100%;
   height: auto;
@@ -107,26 +111,30 @@ nav ul {
   flex-wrap: wrap;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 nav > ul > li {
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
+  display: flex;
 }
 
 .button {
-  background-color: rgb(44, 44, 44);
-  color: rgb(3, 189, 189);
+  background: none;
+  color: #ffa260;
   margin-top: 1rem;
   padding: 6px 10px;
-  border-radius: 7px;
-  border: 1px solid rgba(224, 255, 255, 30%);
+  border-radius: 1px;
+  border: 1px solid;
+  transition: all 0.25s;
+  font-weight: bold;
 }
 
 .button:hover {
-  border: 1px solid lightcyan;
-  background-color: darkcyan;
-  color: black;
-  border: 1px solid white;
-
+  border-color: #f1ff5c;
+  color: rgb(245, 252, 252);
+  box-shadow: 0 0.5rem 0.5rem -0.4rem #f1ff5c;
+  transform: translateY(-0.25rem);
 }
 
 /* Figure */
@@ -161,5 +169,5 @@ footer {
 
 footer > a {
   text-decoration: none;
-  color: grey;
+  color: rgb(88, 88, 88);
 }
