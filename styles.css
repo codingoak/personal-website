@@ -2,32 +2,37 @@
   box-sizing: border-box;
 }
 
-body {
+body:not(footer) {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
   background-color: rgba(255, 235, 205, 50%);
   color: rgba(0, 0, 0, 80%);
-  margin: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 3rem;
 }
 
-h1 {
+h1, h2, h3 {
+  margin-top: 1rem;
   text-align: center;
 }
 
-nav {
-  text-align: center;
+.main-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-nav a {
-  background-color: #0000005d;
-  color: rgba(255, 235, 205, 50%);
-  margin: 0 10px;
+.button {
+  background-color: #0000009c;
+  color: rgba(255, 235, 205, 80%);
   padding: 5px 10px;
+  margin-bottom: 2rem;
   border-radius: 3px;
 }
 
-nav a:hover {
+.button:hover {
   background-color: rgba(255, 235, 205, 50%);
   color:  #0000005d;
 }
@@ -40,22 +45,26 @@ figure {
 }
 
 figure > img {
-  border-radius: 0 108px;
-}
-
-h1, h2, h3 {
-  margin-top: 1rem;
-  text-align: center;
+  border-radius: 0 7vw;
+  width: 100%;
+  height: auto;
 }
 
 section:not(#biography) {
   border-bottom: 1px solid rgba(0, 0, 0, 20%);
 }
 
-
 #tech-stack {
   border-top: 1px solid rgba(0, 0, 0, 10%);
   text-align: center;
+}
+
+.inline-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: inside;
+  white-space: nowrap;
 }
 
 .connect {
@@ -69,6 +78,7 @@ section:not(#biography) {
 
 .logo {
   margin: 10px;
+  display: inline-block;
 }
 
 .thin {
@@ -77,4 +87,16 @@ section:not(#biography) {
 
 #kotlin {
   margin-left: 25px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer > a {
+  text-decoration: none;
+  color: grey;
 }
