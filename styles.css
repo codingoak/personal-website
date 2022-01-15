@@ -180,7 +180,7 @@ a {
 }
 
 a:hover {
-  color:rgb(0, 153, 255);
+  color: white;
   text-decoration: none;
 }
 
