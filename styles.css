@@ -3,13 +3,24 @@
 }
 
 body:not(footer) {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
-  background: linear-gradient(90deg, rgba(0, 138, 138, 7%),rgba(0, 138, 138, 1%), rgba(0, 138, 138, 7%));
-  color: rgba(0, 0, 0, 80%);
+  background-image: url(images/background-mountains.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #081c24;
   margin: 8rem auto 2rem;
   padding: 2rem;
+}
+
+::-moz-selection {
+  color: lightblue; background: rebeccapurple;
+}
+
+::selection {
+  color: lightblue; background: rebeccapurple;
 }
 
 h1, h2, h3 {
@@ -35,13 +46,13 @@ h1, h2, h3 {
 }
 
 section {
-  font-family: 'Open Sans', sans-serif;
   max-width: 800px;
   margin: 1rem auto;
   padding: 0 0.5rem;
   border: 1px solid rgba(0, 0, 0, 20%);
-  border-radius: 1rem;
-  background: linear-gradient(90deg, rgba(0, 138, 138, 3%), rgba(0, 138, 138, 6%), rgba(0, 138, 138, 3%));
+  border-radius: 0.5rem;
+  background-color: rgba(103, 175, 204, 95%);
+  
 }
 
 #biography {
@@ -57,6 +68,10 @@ li {
   list-style: none;
   margin-bottom: 1rem;
   margin: 0 0.5rem 1rem;
+}
+
+a:hover {
+  color: rgba(206, 240, 252, 90%);
 }
 
 p {
@@ -148,7 +163,7 @@ figure {
 }
 
 figure > img {
-  border-radius: 10vw;
+  border-radius: 25vw;
   width: 100%;
   height: auto;
 }
@@ -169,5 +184,9 @@ footer {
 
 footer > a {
   text-decoration: none;
-  color: rgb(88, 88, 88);
+  color: black;
+}
+
+footer > a:hover {
+  color: (245, 252, 252);
 }
