@@ -90,6 +90,12 @@ p {
   white-space: nowrap;
 }
 
+@media (min-width: 464px) {
+  .media-flex {
+    justify-content: space-around;
+  }
+}
+
 .bold {
   font-weight: 600;
 }
