@@ -15,14 +15,6 @@ body:not(footer) {
   padding: 2rem;
 }
 
-::-moz-selection {
-  color: lightblue; background: rebeccapurple;
-}
-
-::selection {
-  color: lightblue; background: rebeccapurple;
-}
-
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   margin-top: 1rem;
@@ -51,12 +43,20 @@ section {
   padding: 0 0.5rem;
   border: 1px solid rgba(0, 0, 0, 20%);
   border-radius: 0.5rem;
-  background-color: rgba(103, 175, 204, 95%);
-  
+  color: white;
+  background-color: rgba(28, 87, 126, 0.8);
+}
+
+#interests {
+  padding-bottom: 0.5rem;
 }
 
 #biography {
   padding-bottom: 2rem;
+}
+
+#tech-stack {
+  background: linear-gradient(to bottom, rgba(28, 87, 126, 0.8), rgba(207, 236, 255, 0.8));
 }
 
 ul {
@@ -70,19 +70,11 @@ li {
   margin: 0 0.5rem 1rem;
 }
 
-a:hover {
-  color: rgba(206, 240, 252, 90%);
-}
-
 p {
   font-size: 1.2rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   padding: 0 0.5rem;
-}
-
-#interests {
-  padding-bottom: 0.5rem;
 }
 
 #tech-stack {
@@ -126,12 +118,14 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav a {
-  text-decoration: none;
-}
-
 nav > ul > li {
   display: flex;
+}
+
+/* button style */
+
+nav a {
+  text-decoration: none;
 }
 
 .button {
@@ -152,7 +146,17 @@ nav > ul > li {
   transform: translateY(-0.25rem);
 }
 
-/* Figure */
+/* selection color */
+
+::-moz-selection {
+  color: lightblue; background: rebeccapurple;
+}
+
+::selection {
+  color: lightblue; background: rebeccapurple;
+}
+
+/* figure */
 
 figure {
   text-align: center;
@@ -163,19 +167,36 @@ figure {
 }
 
 figure > img {
+  border: 1px solid rgba(28, 87, 126, 20%);
   border-radius: 25vw;
   width: 100%;
   height: auto;
 }
 
-/* Link Logos */
+/* link style */
+
+a {
+  color: rgb(129, 203, 253);
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+}
+
+/* link logos */
 
 .logo {
   margin: 8px;
   display: inline-block;
 }
 
-/* Footer */
+/* footer */
 
 footer {
   margin: 1.5rem auto -1.5rem;
@@ -188,5 +209,5 @@ footer > a {
 }
 
 footer > a:hover {
-  color: (245, 252, 252);
+  color: white;
 }
