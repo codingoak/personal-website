@@ -186,7 +186,11 @@ a:hover {
 
 a:active {
   color: rgb(78, 78, 78);
-  text-decoration: none;
+}
+
+.web-links:hover {
+  transition: color 0.25s;
+  transition: text-decoration 0.15;
 }
 
 /* link logos */
@@ -194,6 +198,11 @@ a:active {
 .logo {
   margin: 8px;
   display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.5;
+  transition: all 0.25s;
 }
 
 /* footer */
@@ -210,4 +219,5 @@ footer > a {
 
 footer > a:hover {
   color: white;
+  transition: all 0.25s;
 }
