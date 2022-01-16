@@ -41,7 +41,7 @@ section {
   max-width: 800px;
   margin: 1rem auto;
   padding: 0 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 20%);
+  border: 1px solid rgba(28, 87, 126, 0.6);
   border-radius: 0.5rem;
   color: white;
   background-color: rgba(28, 87, 126, 0.8);
@@ -57,6 +57,14 @@ section {
 
 #tech-stack {
   background: linear-gradient(to bottom, rgba(28, 87, 126, 0.8), rgba(207, 236, 255, 0.8));
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#tech-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 ul {
@@ -77,17 +85,11 @@ p {
   padding: 0 0.5rem;
 }
 
-#tech-stack {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
 .inline-flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: inside;
-  white-space: nowrap;
 }
 
 @media (min-width: 464px) {
@@ -98,6 +100,10 @@ p {
 
 .bold {
   font-weight: 600;
+}
+
+.nowrapping {
+  white-space: nowrap;
 }
 
 .block {
@@ -139,7 +145,7 @@ nav a {
   color: #ffa260;
   margin-top: 1rem;
   padding: 6px 10px;
-  border-radius: 1px;
+  border-radius: 3px;
   border: 1px solid;
   transition: all 0.25s;
   font-weight: bold;
@@ -153,13 +159,8 @@ nav a {
 }
 
 /* selection color */
-
-::-moz-selection {
-  color: lightblue; background: rebeccapurple;
-}
-
 ::selection {
-  color: lightblue; background: rebeccapurple;
+  color: lightblue; background: rgba(182, 0, 0, 0.8);
 }
 
 /* figure */
@@ -168,13 +169,13 @@ figure {
   text-align: center;
   margin: 0 auto;
   padding: 1rem 1rem 2rem;
-  max-width: 400px;
-  min-width: 200px;
+  max-width: 350px;
+  min-width: 150px;
 }
 
 figure > img {
   border: 1px solid rgba(28, 87, 126, 20%);
-  border-radius: 25vw;
+  border-radius: 50%;
   width: 100%;
   height: auto;
 }
