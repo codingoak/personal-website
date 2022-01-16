@@ -15,11 +15,13 @@
 
 <body>
   <header>
-    <div>
-      <h1>Daniel Eicher</h1>
-      <div id="line"></div>
-      <h3 id="job">student web developer</h3>
-    </div>
+    <h1>Daniel Eicher</h1>
+    <div id="line"></div>
+    <h3 id="job">student <span class="nowrapping">web developer</span></h3>
+    <figure>
+      <img src="images/daniel-eicher.png" alt="picture daniel eicher" width="700" height="500">
+      <figcaption>welcome to my web page</figcaption>
+    </figure>
     <nav>
       <ul>
         <li><a href="#interests" class="button">Interests</a></li>
@@ -28,10 +30,6 @@
         <li><a href="#tech-stack" class="button">Tech stack</a></li>
       </ul>
     </nav>
-    <figure>
-      <img src="images/daniel-eicher.png" alt="picture daniel eicher" width="700" height="500">
-      <figcaption>welcome to my web page</figcaption>
-    </figure>
   </header>
   <section id="interests">
     <h2>Interests</h2>
@@ -70,58 +68,71 @@
   </section>
   <section id="tech-stack">
     <h2>Tech stack</h2>
-    <!-- Python-logo with a link to python.org -->
-    <a class="logo" href="https://www.python.org/downloads/" target="_blank"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="32" height="32"
-        alt="python-logo"></a>
-    <!-- Kotlin-logo with a link to kotlinlang.org -->
-    <a class="logo" href="https://kotlinlang.org/" target="_blank"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" width="32" height="32"
-        alt="kotlin-logo"></a>
-    <!-- HTML5-logo with a link to HMTL5 specs on whatwg.org -->
-    <a class="logo" href="https://html.spec.whatwg.org/multipage/" target="_blank"><img
-        src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="32" height="32" alt="html5-logo"></a>
-    <!-- CSS3-logo with a link to CSS3 specs on w3c.org -->
-    <a class="logo" href="https://www.w3.org/Style/CSS/specs" target="_blank"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="32" height="32"
-        alt="css3-logo"></a>
-    <!-- Git-logo with a link to git-scm.com -->
-    <a class="logo" href="https://git-scm.com/" target="_blank"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" width="32" height="32"
-        alt="git-logo"></a>
-    <!-- VS code-logo with a link to visualstudio.com -->
-    <a class="logo" href="https://code.visualstudio.com/" target="_blank"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32"
-        height="32" alt="visualcode-logo"></a>
-    <!-- IntelliJ IDEA-logo with a link to jetbrains.com -->
-    <a class="logo" href="https://www.jetbrains.com/" target="_blank"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" width="32" height="32"
-        alt="intellij-idea-logo"></a>
-    <!-- Android studio-logo with a link to android.com -->
-    <a class="logo" href="https://developer.android.com/studio" target="_blank"><img
-        src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Android_Studio_Icon_%282014-2019%29.svg" width="32"
-        height="32" alt="androidstudio-logo"></a>
+    <div id="tech-flex">
+      <div>
+        <!-- python-logo with a link to python.org -->
+        <a class="logo" href="https://www.python.org/downloads/" target="_blank"><img src="/images/python-logo.svg"
+            width="32" height="32" alt="python-logo"></a>
+      </div>
+      <div>
+        <!-- kotlin-logo with a link to kotlinlang.org -->
+        <a class="logo" href="https://kotlinlang.org/" target="_blank"><img src="/images/kotlin-logo.svg" width="32"
+            height="32" alt="kotlin-logo"></a>
+      </div>
+      <div>
+        <!-- javascript-logo with a link to ecma-international.org -->
+        <a class="logo" href="https://www.ecma-international.org/publications-and-standards/standards/"
+          target="_blank"><img src="/images/javascript-logo.svg" width="32" height="32" alt="javascript-logo"></a>
+      </div>
+      <div>
+        <!-- html5-logo with a link to html5 specs on whatwg.org -->
+        <a class="logo" href="https://html.spec.whatwg.org/multipage/" target="_blank"><img src="/images/html5-logo.svg"
+            width="32" height="32" alt="html5-logo"></a>
+      </div>
+      <div>
+        <!-- css3-logo with a link to css3 specs on w3c.org -->
+        <a class="logo" href="https://www.w3.org/Style/CSS/specs" target="_blank"><img src="/images/css3-logo.svg"
+            width="32" height="32" alt="css3-logo"></a>
+      </div>
+      <div>
+        <!-- git-logo with a link to git-scm.com -->
+        <a class="logo" href="https://git-scm.com/" target="_blank"><img src="/images/git-logo.svg" width="32"
+            height="32" alt="git-logo"></a>
+      </div>
+      <div>
+        <!-- vscode-logo with a link to visualstudio.com -->
+        <a class="logo" href="https://code.visualstudio.com/" target="_blank"><img src="/images/vscode-logo.svg"
+            width="32" height="32" alt="visualcode-logo"></a>
+      </div>
+      <div>
+        <!-- intellij idea-logo with a link to jetbrains.com -->
+        <a class="logo" href="https://www.jetbrains.com/" target="_blank"><img src="/images/intellijidea-logo.svg"
+            width="32" height="32" alt="intellij-idea-logo"></a>
+      </div>
+      <div>
+        <!-- android studio-logo with a link to android.com -->
+        <a class="logo" href="https://developer.android.com/studio" target="_blank"><img
+            src="/images/androidstudio-logo.svg" width="32" height="32" alt="androidstudio-logo"></a>
+      </div>
+    </div>
   </section>
   <footer>
     <div>
-      <!-- GitHub-logo with a link to my profil -->
-      <a class="logo" href="https://github.com/codingoak" target="_blank"><img
-          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="32" height="32"
-          alt="github-logo"></a>
-      <!-- CodePen-logo with a link to my profil -->
-      <a class="logo" href="https://codepen.io/codingoak" target="_blank"><img
-          src="https://res.cloudinary.com/css-tricks/images/w_32,h_32,c_fill/f_auto,q_auto/v1637703542/Button-Black-Large/Button-Black-Large-png?_i=AA"
-          width="32" height="32" alt="codepen-logo"></a>
-      <!-- LinkedIn-logo with a link to my profil -->
+      <!-- github-logo with a link to my profil -->
+      <a class="logo" href="https://github.com/codingoak" target="_blank"><img src="/images/github-logo.png" width="32"
+          height="32" alt="github-logo"></a>
+      <!-- codepen-logo with a link to my profil -->
+      <a class="logo" href="https://codepen.io/codingoak" target="_blank"><img src="/images/codepen-logo.png" width="32"
+          height="32" alt="codepen-logo"></a>
+      <!-- linkedin-logo with a link to my profil -->
       <a class="logo" href="https://www.linkedin.com/in/daniel-eicher-963844203/" target="_blank"><img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="32" height="32"
-          alt="linkedin-logo"></a>
+          src="/images/linkedin-logo.png" width="32" height="32" alt="linkedin-logo"></a>
       <!-- facebook-logo with a link to my profil -->
       <a class="logo" href="https://www.facebook.com/daniel.eicher.355/" target="_blank"><img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="32"
-          height="32" alt="linkedin-logo"></a>
+          src="/images/facebook-logo.png" width="32" height="32" alt="facebook-logo"></a>
     </div>
-    <a href="#"><small>&copy; Copyright 2022 by Daniel Eicher. All Rights Reserved.</small></a>
+    <a href="#"><small>&copy; Copyright 2022 by Daniel Eicher. <span class="nowrapping">All Rights
+          Reserved.</span></small></a>
   </footer>
 </body>
 
