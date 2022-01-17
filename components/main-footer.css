@@ -1,17 +1,22 @@
-#bottom {
+/* okay */
+
+.main-footer {
   text-align: center;
 }
 
-#bottom > a {
+.main-footer__anchor {
   text-decoration: none;
   color: var(--color-dark);
 }
 
-#bottom > a:hover {
+.main-footer__anchor:hover {
   color: var(--color-whitish);
   transition: all 0.25s;
 }
 
-.connect-flex {
+.main-footer__anchor-flex {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 3vw;
 }

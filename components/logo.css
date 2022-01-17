@@ -1,14 +1,11 @@
-.logo {
-  margin: 8px;
-  display: inline-block;
-}
+/* okay */
 
 .logo:hover {
   opacity: 0.5;
   transition: all 0.25s;
 }
 
-.logo-flex {
+.logo-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

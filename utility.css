@@ -1,22 +1,19 @@
-.bold {
-  font-weight: 600;
+/* okay */
+
+.utility__bold {
+  font-weight: 700;
 }
 
-.nowrapping {
+.utility__nowrapping {
   white-space: nowrap;
 }
 
-.block {
-  display: block;
-}
-
-ul[role="list"] {
+.utility__list-simple[role="list"] {
   list-style: none;
-  margin-right: 0.5rem;
-  margin-left: -2rem;
+  padding: 0;
 }
 
-li {
-  margin-bottom: 1rem;
-  margin: 0 0.5rem 1rem;
+.utility__container-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }

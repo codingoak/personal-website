@@ -17,30 +17,56 @@
   <body>
     <header>
       <!-- mobile-nav -->
-      <nav class="mobile-nav">
+      <nav class="nav-bar">
         <details>
-          <summary>Menu</summary>
-          <ul role="list">
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#biography">Biography</a></li>
-            <li><a href="#tech-stack">Tech stack</a></li>
+          <summary class="nav-bar__menu-mobile">Menu</summary>
+          <ul role="list" class="utility__list-simple">
+            <li class="nav-bar__btn-mobile">
+              <a class="hyperlink hyperlink__noline" href="#interests"
+                >Interests</a
+              >
+            </li>
+            <li class="nav-bar__btn-mobile">
+              <a class="hyperlink hyperlink__noline" href="#contact">Contact</a>
+            </li>
+            <li class="nav-bar__btn-mobile">
+              <a class="hyperlink hyperlink__noline" href="#biography"
+                >Biography</a
+              >
+            </li>
+            <li class="nav-bar__btn-mobile" v>
+              <a class="hyperlink hyperlink__noline" href="#tech-stack"
+                >Tech stack</a
+              >
+            </li>
           </ul>
         </details>
       </nav>
       <!-- desktop-nav -->
-      <nav class="desktop-nav">
-        <ul role="list" class="flex-container">
-          <li><a href="#interests" class="nav-btn">Interests</a></li>
-          <li><a href="#contact" class="nav-btn">Contact</a></li>
-          <li><a href="#biography" class="nav-btn">Biography</a></li>
-          <li><a href="#tech-stack" class="nav-btn">Tech stack</a></li>
+      <nav class="nav-bar nav-bar__desktop">
+        <ul role="list" class="nav-bar__list-container utility__list-simple">
+          <li class="nav-bar__item">
+            <a href="#interests" class="nav-bar__btn nav-bar__anchor"
+              >Interests</a
+            >
+          </li>
+          <li class="nav-bar__item">
+            <a href="#contact" class="nav-bar__btn">Contact</a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="#biography" class="nav-bar__btn">Biography</a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="#tech-stack" class="nav-bar__btn">Tech stack</a>
+          </li>
         </ul>
       </nav>
       <div>
         <h1>Daniel Eicher</h1>
         <div id="line"></div>
-        <h3 id="job">student <span class="nowrapping">web developer</span></h3>
+        <h3 id="job">
+          student <span class="utility__nowrapping">web developer</span>
+        </h3>
       </div>
       <figure>
         <img
@@ -54,7 +80,10 @@
     </header>
     <section id="interests">
       <h2>Interests</h2>
-      <ul role="list" class="flex-container interests-flex nowrapping">
+      <ul
+        role="list"
+        class="interests-flex utility__nowrapping utility__list-simple utility__container-wrap"
+      >
         <li>Family</li>
         <li>Nature</li>
         <li>Hiking</li>
@@ -65,17 +94,20 @@
     </section>
     <section>
       <h2 id="contact">Contact</h2>
-      <ul role="list" class="flex-container contact-flex media-flex">
+      <ul
+        role="list"
+        class="contact-flex media-flex utility__list-simple utility__container-wrap"
+      >
         <li>
-          <span class="bold">Phone: </span><br /><a
-            class="web-links"
+          <span class="utility__bold">Phone: </span><br /><a
+            class="hyperlink"
             href="tel:+34642104722"
             >+34 642 104 722</a
           >
         </li>
         <li>
-          <span class="bold">Mail: </span
-          ><a class="web-links" href="mailto:danieleicher@gmx.net"
+          <span class="utility__bold">Mail: </span
+          ><a class="hyperlink" href="mailto:danieleicher@gmx.net"
             ><br />danieleicher@gmx.net</a
           >
         </li>
@@ -92,14 +124,14 @@
           office worker for five years (2007-2012).<br />
           A few years ago I started programming with Java, Python and Kotlin as
           a hobby. After these first steps of coding I'm currently learning with
-          <a class="web-links" href="https://www.neuefische.de/">neuefische</a>
+          <a class="hyperlink" href="https://www.neuefische.de/">neuefische</a>
           to start my career in web development.
         </p>
       </div>
     </section>
     <section id="tech-stack">
       <h2>Tech stack</h2>
-      <ul role="list" class="flex-container tech-flex">
+      <ul role="list" class="logo-container utility__list-simple">
         <li>
           <!-- python-logo with a link to python.org -->
           <a
@@ -207,8 +239,8 @@
         </li>
       </ul>
     </section>
-    <footer id="bottom">
-      <ul role="list" class="flex-container connect-flex">
+    <footer class="main-footer">
+      <ul role="list" class="main-footer__anchor-flex utility__list-simple">
         <li>
           <!-- github-logo with a link to my profil -->
           <a class="logo" href="https://github.com/codingoak" target="_blank"
@@ -256,10 +288,10 @@
           /></a>
         </li>
       </ul>
-      <a href="#"
+      <a class="main-footer__anchor" href="#"
         ><small
           >&copy; Copyright 2022 by Daniel Eicher.
-          <span class="nowrapping">All Rights Reserved.</span></small
+          <span class="utility__nowrapping">All Rights Reserved.</span></small
         ></a
       >
     </footer>

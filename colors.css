@@ -9,6 +9,7 @@
   --color-red-trans: rgba(182, 0, 0, 0.8);
   --color-gray-trans: rgba(28, 87, 126, 20%);
   --color-dark: #081c24;
+  --color-dark-trans: rgba(8, 28, 36, 0.4);
 }
 
 ::selection {

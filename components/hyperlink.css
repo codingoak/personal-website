@@ -1,0 +1,20 @@
+/* okay */
+
+.hyperlink {
+  color: var(--color-blue);
+}
+
+.hyperlink:hover {
+  color: var(--color-whitish);
+  transition: color 0.25s;
+  text-decoration: none;
+  transition: text-decoration 0.15;
+}
+
+.hyperlink:active {
+  color: var(--color-dark);
+}
+
+.hyperlink__noline {
+  text-decoration: none;
+}
