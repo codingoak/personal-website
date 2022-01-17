@@ -1,123 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Eicher</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Eicher</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <div>
-      <h1>Daniel Eicher</h1>
-      <div id="line"></div>
-      <h3 id="job">student <span class="nowrapping">web developer</span></h3>
-    </div>
-    <nav>
-      <ul class="flex-container">
-        <li><a href="#interests" class="button">Interests</a></li>
-        <li><a href="#contact" class="button">Contact</a></li>
-        <li><a href="#biography" class="button">Biography</a></li>
-        <li><a href="#tech-stack" class="button">Tech stack</a></li>
+  <body>
+    <header>
+      <div>
+        <h1>Daniel Eicher</h1>
+        <div id="line"></div>
+        <h3 id="job">student <span class="nowrapping">web developer</span></h3>
+      </div>
+      <nav>
+        <ul class="flex-container">
+          <li><a href="#interests" class="button">Interests</a></li>
+          <li><a href="#contact" class="button">Contact</a></li>
+          <li><a href="#biography" class="button">Biography</a></li>
+          <li><a href="#tech-stack" class="button">Tech stack</a></li>
+        </ul>
+      </nav>
+      <figure>
+        <img
+          src="images/daniel-eicher.png"
+          alt="picture daniel eicher"
+          width="700"
+          height="500"
+        />
+        <figcaption>welcome to my web page</figcaption>
+      </figure>
+    </header>
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul class="flex-container interests-flex nowrapping">
+        <li>Family</li>
+        <li>Nature</li>
+        <li>Hiking</li>
+        <li>Coding</li>
+        <li>Technology</li>
+        <li>Reading books</li>
       </ul>
-    </nav>
-    <figure>
-      <img src="images/daniel-eicher.png" alt="picture daniel eicher" width="700" height="500">
-      <figcaption>welcome to my web page</figcaption>
-    </figure>
-  </header>
-  <section id="interests">
-    <h2>Interests</h2>
-    <ul class="flex-container interests-flex nowrapping">
-      <li>Family</li>
-      <li>Nature</li>
-      <li>Hiking</li>
-      <li>Coding</li>
-      <li>Technology</li>
-      <li>Reading books</li>
-    </ul>
-  </section>
-  <section>
-    <h2 id="contact">Contact</h2>
-    <ul class="flex-container contact-flex media-flex">
-      <li><span class="bold">Phone: </span><br><a class="web-links" href="tel:+34642104722">+34 642 104 722</a></li>
-      <li><span class="bold">Mail: </span><a class="web-links"
-          href="mailto:danieleicher@gmx.net"><br>danieleicher@gmx.net</a></li>
-    </ul>
-  </section>
-  <section id="biography">
-    <h2>Biography</h2>
-    <div>
-      <p>
-        In 2005 I completed my studies as an electrical installer and 2019 as an electrical safety advisor with
-        control
-        authorization. I worked as an electrician for 15 years, including seven years as an electrician
-        construction manager. I have also been working as a dispatcher and office worker for five years
-        (2007-2012).<br>
-        A few years ago I started programming with Java, Python and Kotlin as a hobby. After these first steps of
-        coding I'm currently learning with <a class="web-links" href="https://www.neuefische.de/">neuefische</a> to
-        start my career in
-        web
-        development.
-      </p>
-  </section>
-  <section id="tech-stack">
-    <h2>Tech stack</h2>
-    <div class="flex-container tech-flex">
-      <!-- python-logo with a link to python.org -->
-      <a class="logo" href="https://www.python.org/downloads/" target="_blank"><img src="/images/python-logo.svg"
-          width="32" height="32" alt="python-logo"></a>
-      <!-- kotlin-logo with a link to kotlinlang.org -->
-      <a class="logo" href="https://kotlinlang.org/" target="_blank"><img src="/images/kotlin-logo.svg" width="32"
-          height="32" alt="kotlin-logo"></a>
-      <!-- javascript-logo with a link to ecma-international.org -->
-      <a class="logo" href="https://www.ecma-international.org/publications-and-standards/standards/"
-        target="_blank"><img src="/images/javascript-logo.svg" width="32" height="32" alt="javascript-logo"></a>
-      <!-- html5-logo with a link to html5 specs on whatwg.org -->
-      <a class="logo" href="https://html.spec.whatwg.org/multipage/" target="_blank"><img src="/images/html5-logo.svg"
-          width="32" height="32" alt="html5-logo"></a>
-      <!-- css3-logo with a link to css3 specs on w3c.org -->
-      <a class="logo" href="https://www.w3.org/Style/CSS/specs" target="_blank"><img src="/images/css3-logo.svg"
-          width="32" height="32" alt="css3-logo"></a>
-      <!-- git-logo with a link to git-scm.com -->
-      <a class="logo" href="https://git-scm.com/" target="_blank"><img src="/images/git-logo.svg" width="32" height="32"
-          alt="git-logo"></a>
-      <!-- vscode-logo with a link to visualstudio.com -->
-      <a class="logo" href="https://code.visualstudio.com/" target="_blank"><img src="/images/vscode-logo.svg"
-          width="32" height="32" alt="visualcode-logo"></a>
-      <!-- intellij idea-logo with a link to jetbrains.com -->
-      <a class="logo" href="https://www.jetbrains.com/" target="_blank"><img src="/images/intellijidea-logo.svg"
-          width="32" height="32" alt="intellij-idea-logo"></a>
-      <!-- android studio-logo with a link to android.com -->
-      <a class="logo" href="https://developer.android.com/studio" target="_blank"><img
-          src="/images/androidstudio-logo.svg" width="32" height="32" alt="androidstudio-logo"></a>
-    </div>
-  </section>
-  <footer>
-    <div>
-      <!-- github-logo with a link to my profil -->
-      <a class="logo" href="https://github.com/codingoak" target="_blank"><img src="/images/github-logo.png" width="32"
-          height="32" alt="github-logo"></a>
-      <!-- codepen-logo with a link to my profil -->
-      <a class="logo" href="https://codepen.io/codingoak" target="_blank"><img src="/images/codepen-logo.png" width="32"
-          height="32" alt="codepen-logo"></a>
-      <!-- linkedin-logo with a link to my profil -->
-      <a class="logo" href="https://www.linkedin.com/in/daniel-eicher-963844203/" target="_blank"><img
-          src="/images/linkedin-logo.png" width="32" height="32" alt="linkedin-logo"></a>
-      <!-- facebook-logo with a link to my profil -->
-      <a class="logo" href="https://www.facebook.com/daniel.eicher.355/" target="_blank"><img
-          src="/images/facebook-logo.png" width="32" height="32" alt="facebook-logo"></a>
-    </div>
-    <a href="#"><small>&copy; Copyright 2022 by Daniel Eicher. <span class="nowrapping">All Rights
-          Reserved.</span></small></a>
-  </footer>
-</body>
-
+    </section>
+    <section>
+      <h2 id="contact">Contact</h2>
+      <ul class="flex-container contact-flex media-flex">
+        <li>
+          <span class="bold">Phone: </span><br /><a
+            class="web-links"
+            href="tel:+34642104722"
+            >+34 642 104 722</a
+          >
+        </li>
+        <li>
+          <span class="bold">Mail: </span
+          ><a class="web-links" href="mailto:danieleicher@gmx.net"
+            ><br />danieleicher@gmx.net</a
+          >
+        </li>
+      </ul>
+    </section>
+    <section id="biography">
+      <h2>Biography</h2>
+      <div>
+        <p>
+          In 2005 I completed my studies as an electrical installer and 2019 as
+          an electrical safety advisor with control authorization. I worked as
+          an electrician for 15 years, including seven years as an electrician
+          construction manager. I have also been working as a dispatcher and
+          office worker for five years (2007-2012).<br />
+          A few years ago I started programming with Java, Python and Kotlin as
+          a hobby. After these first steps of coding I'm currently learning with
+          <a class="web-links" href="https://www.neuefische.de/">neuefische</a>
+          to start my career in web development.
+        </p>
+      </div>
+    </section>
+    <section id="tech-stack">
+      <h2>Tech stack</h2>
+      <div class="flex-container tech-flex">
+        <!-- python-logo with a link to python.org -->
+        <a class="logo" href="https://www.python.org/downloads/" target="_blank"
+          ><img
+            src="/images/python-logo.svg"
+            width="32"
+            height="32"
+            alt="python-logo"
+        /></a>
+        <!-- kotlin-logo with a link to kotlinlang.org -->
+        <a class="logo" href="https://kotlinlang.org/" target="_blank"
+          ><img
+            src="/images/kotlin-logo.svg"
+            width="32"
+            height="32"
+            alt="kotlin-logo"
+        /></a>
+        <!-- javascript-logo with a link to ecma-international.org -->
+        <a
+          class="logo"
+          href="https://www.ecma-international.org/publications-and-standards/standards/"
+          target="_blank"
+          ><img
+            src="/images/javascript-logo.svg"
+            width="32"
+            height="32"
+            alt="javascript-logo"
+        /></a>
+        <!-- html5-logo with a link to html5 specs on whatwg.org -->
+        <a
+          class="logo"
+          href="https://html.spec.whatwg.org/multipage/"
+          target="_blank"
+          ><img
+            src="/images/html5-logo.svg"
+            width="32"
+            height="32"
+            alt="html5-logo"
+        /></a>
+        <!-- css3-logo with a link to css3 specs on w3c.org -->
+        <a
+          class="logo"
+          href="https://www.w3.org/Style/CSS/specs"
+          target="_blank"
+          ><img
+            src="/images/css3-logo.svg"
+            width="32"
+            height="32"
+            alt="css3-logo"
+        /></a>
+        <!-- git-logo with a link to git-scm.com -->
+        <a class="logo" href="https://git-scm.com/" target="_blank"
+          ><img
+            src="/images/git-logo.svg"
+            width="32"
+            height="32"
+            alt="git-logo"
+        /></a>
+        <!-- vscode-logo with a link to visualstudio.com -->
+        <a class="logo" href="https://code.visualstudio.com/" target="_blank"
+          ><img
+            src="/images/vscode-logo.svg"
+            width="32"
+            height="32"
+            alt="visualcode-logo"
+        /></a>
+        <!-- intellij idea-logo with a link to jetbrains.com -->
+        <a class="logo" href="https://www.jetbrains.com/" target="_blank"
+          ><img
+            src="/images/intellijidea-logo.svg"
+            width="32"
+            height="32"
+            alt="intellij-idea-logo"
+        /></a>
+        <!-- android studio-logo with a link to android.com -->
+        <a
+          class="logo"
+          href="https://developer.android.com/studio"
+          target="_blank"
+          ><img
+            src="/images/androidstudio-logo.svg"
+            width="32"
+            height="32"
+            alt="androidstudio-logo"
+        /></a>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <!-- github-logo with a link to my profil -->
+        <a class="logo" href="https://github.com/codingoak" target="_blank"
+          ><img
+            src="/images/github-logo.png"
+            width="32"
+            height="32"
+            alt="github-logo"
+        /></a>
+        <!-- codepen-logo with a link to my profil -->
+        <a class="logo" href="https://codepen.io/codingoak" target="_blank"
+          ><img
+            src="/images/codepen-logo.png"
+            width="32"
+            height="32"
+            alt="codepen-logo"
+        /></a>
+        <!-- linkedin-logo with a link to my profil -->
+        <a
+          class="logo"
+          href="https://www.linkedin.com/in/daniel-eicher-963844203/"
+          target="_blank"
+          ><img
+            src="/images/linkedin-logo.png"
+            width="32"
+            height="32"
+            alt="linkedin-logo"
+        /></a>
+        <!-- facebook-logo with a link to my profil -->
+        <a
+          class="logo"
+          href="https://www.facebook.com/daniel.eicher.355/"
+          target="_blank"
+          ><img
+            src="/images/facebook-logo.png"
+            width="32"
+            height="32"
+            alt="facebook-logo"
+        /></a>
+      </div>
+      <a href="#"
+        ><small
+          >&copy; Copyright 2022 by Daniel Eicher.
+          <span class="nowrapping">All Rights Reserved.</span></small
+        ></a
+      >
+    </footer>
+  </body>
 </html>
