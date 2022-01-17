@@ -1,7 +1,7 @@
 section {
   max-width: 800px;
   margin: 1rem auto;
-  padding: 0 0.5rem;
+  padding: 0 2rem 1rem;
   border: 1px solid var(--color-blue-dark-trans);
   border-radius: 0.5rem;
   color: var(--color-whitish);
@@ -10,32 +10,23 @@ section {
 
 p {
   font-size: 1.2rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  padding: 0 0.5rem;
-}
-
-#interests {
-  padding-bottom: 0.5rem;
 }
 
 .interests-flex {
   justify-content: space-around;
+  gap: 25px;
 }
 
 .contact-flex {
   justify-content: space-between;
+  gap: 25px;
   list-style: inside;
 }
 
-@media (min-width: 464px) {
+@media (min-width: 473px) {
   .media-flex {
     justify-content: space-around;
   }
-}
-
-#biography {
-  padding-bottom: 2rem;
 }
 
 #tech-stack {
