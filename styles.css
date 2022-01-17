@@ -1,3 +1,5 @@
+@import "./colors.css";
+
 /* generic styles */
 
 * {
@@ -10,7 +12,7 @@ body:not(bottom) {
   padding: 2rem;
 
   /* typography */
-  color: #081c24;
+  color: var(--color-dark);
   font-family: "Open Sans", sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
@@ -44,7 +46,7 @@ h3 {
   max-width: 350px;
   margin: -1rem auto 1.5rem;
   padding: 0;
-  background-color: rgba(0, 0, 0, 60%);
+  background-color: var(--color-dark);
 }
 
 #job {
@@ -57,10 +59,10 @@ section {
   max-width: 800px;
   margin: 1rem auto;
   padding: 0 0.5rem;
-  border: 1px solid rgba(28, 87, 126, 0.6);
+  border: 1px solid var(--color-blue-dark-trans);
   border-radius: 0.5rem;
   color: white;
-  background-color: rgba(28, 87, 126, 0.8);
+  background-color: var(--color-blue-dark-trans);
 }
 
 #interests {
@@ -78,8 +80,8 @@ section {
 #tech-stack {
   background: linear-gradient(
     to bottom,
-    rgba(28, 87, 126, 0.8),
-    rgba(207, 236, 255, 0.8)
+    var(--color-blue-dark-trans),
+    var(--color-blue-light-trans)
   );
   text-align: center;
 }
@@ -135,7 +137,7 @@ nav {
   font-size: 1rem;
   margin-left: -2rem;
   overflow: hidden;
-  background-color: #151b29;
+  background-color: var(--color-dark);
   display: block;
   position: absolute;
   top: 0;
@@ -158,7 +160,7 @@ nav > ul > li {
     display: none;
   }
   .mobile-nav {
-    color: #ffa260;
+    color: var(--color-orange);
   }
 }
 
@@ -176,7 +178,7 @@ nav a {
 
 .nav-btn {
   background: none;
-  color: #ffa260;
+  color: var(--color-orange);
   margin-top: 1rem;
   padding: 6px 10px;
   border-radius: 3px;
@@ -186,17 +188,17 @@ nav a {
 }
 
 .nav-btn:hover {
-  border-color: #f1ff5c;
-  color: rgb(245, 252, 252);
-  box-shadow: 0 0.5rem 0.5rem -0.4rem #f1ff5c;
+  border-color: var(--color-yellow);
+  color: var(--color-whitish);
+  box-shadow: 0 0.5rem 0.5rem -0.4rem var(--color-yellow);
   transform: translateY(-0.25rem);
 }
 
 /* selection color */
 
 ::selection {
-  color: lightblue;
-  background: rgba(182, 0, 0, 0.8);
+  color: var(--color-blue-light);
+  background: var(--color-red-trans);
 }
 
 /* figure */
@@ -210,7 +212,7 @@ figure {
 }
 
 figure > img {
-  border: 1px solid rgba(28, 87, 126, 20%);
+  border: 1px solid var(--color-gray-trans);
   border-radius: 50%;
   width: 100%;
   height: auto;
@@ -219,16 +221,16 @@ figure > img {
 /* link style */
 
 a {
-  color: rgb(129, 203, 253);
+  color: var(--color-blue);
 }
 
 a:hover {
-  color: white;
+  color: var(--color-whitish);
   text-decoration: none;
 }
 
 a:active {
-  color: rgb(78, 78, 78);
+  color: var(--color-dark);
 }
 
 .web-links:hover {
@@ -262,11 +264,11 @@ a:active {
 
 #bottom > a {
   text-decoration: none;
-  color: black;
+  color: var(--color-dark);
 }
 
 #bottom > a:hover {
-  color: white;
+  color: var(--color-whitish);
   transition: all 0.25s;
 }
 
