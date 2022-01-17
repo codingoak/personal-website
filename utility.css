@@ -1,0 +1,22 @@
+.bold {
+  font-weight: 600;
+}
+
+.nowrapping {
+  white-space: nowrap;
+}
+
+.block {
+  display: block;
+}
+
+ul {
+  margin-right: 0.5rem;
+  margin-left: -2rem;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+  margin: 0 0.5rem 1rem;
+}

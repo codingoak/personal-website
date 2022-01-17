@@ -1,0 +1,22 @@
+#job {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -1rem;
+}
+
+/* figure */
+
+figure {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  max-width: 350px;
+  min-width: 150px;
+}
+
+figure > img {
+  border: 1px solid var(--color-gray-trans);
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}

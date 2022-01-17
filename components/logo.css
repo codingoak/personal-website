@@ -1,0 +1,15 @@
+.logo {
+  margin: 8px;
+  display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.5;
+  transition: all 0.25s;
+}
+
+.logo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

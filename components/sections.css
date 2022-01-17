@@ -1,0 +1,52 @@
+section {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 0 0.5rem;
+  border: 1px solid var(--color-blue-dark-trans);
+  border-radius: 0.5rem;
+  color: var(--color-whitish);
+  background-color: var(--color-blue-dark-trans);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+#interests {
+  padding-bottom: 0.5rem;
+}
+
+.interests-flex {
+  justify-content: space-around;
+}
+
+.contact-flex {
+  justify-content: space-between;
+  list-style: inside;
+}
+
+@media (min-width: 464px) {
+  .media-flex {
+    justify-content: space-around;
+  }
+}
+
+#biography {
+  padding-bottom: 2rem;
+}
+
+#tech-stack {
+  background: linear-gradient(
+    to bottom,
+    var(--color-blue-dark-trans),
+    var(--color-blue-light-trans)
+  );
+  text-align: center;
+}
+
+.tech-flex {
+  justify-content: space-evenly;
+}

@@ -1,0 +1,17 @@
+#bottom {
+  text-align: center;
+}
+
+#bottom > a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+#bottom > a:hover {
+  color: var(--color-whitish);
+  transition: all 0.25s;
+}
+
+.connect-flex {
+  justify-content: center;
+}
