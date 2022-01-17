@@ -10,13 +10,13 @@
   display: block;
 }
 
-ul {
+ul[role="list"] {
+  list-style: none;
   margin-right: 0.5rem;
   margin-left: -2rem;
 }
 
 li {
-  list-style: none;
   margin-bottom: 1rem;
   margin: 0 0.5rem 1rem;
 }
