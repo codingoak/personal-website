@@ -26,6 +26,11 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* generic styles end */
 
 #line {
@@ -56,6 +61,8 @@ section {
 
 #interests { padding-bottom: 0.5rem; }
 
+.interests-flex { justify-content: space-around; }
+
 #biography { padding-bottom: 2rem; }
 
 #tech-stack {
@@ -64,11 +71,7 @@ section {
   padding-bottom: 2rem;
 }
 
-#tech-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+.tech-flex { justify-content: space-evenly; }
 
 ul {
   margin-right: 0.5rem;
@@ -88,10 +91,8 @@ p {
   padding: 0 0.5rem;
 }
 
-.inline-flex {
-  display: flex;
+.contact-flex {
   justify-content: space-between;
-  flex-wrap: wrap;
   list-style: inside;
 }
 
@@ -119,11 +120,7 @@ nav {
   height: auto;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+nav ul { justify-content: space-evenly; }
 
 nav > ul > li { display: flex; }
 
