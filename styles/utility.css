@@ -1,0 +1,23 @@
+.bd {
+  font-weight: 700;
+}
+
+.nowrapping {
+  white-space: nowrap;
+}
+
+.list--simple[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+/* margin */
+
+/* padding */
+
+/* flexbox */
+
+.container--wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
