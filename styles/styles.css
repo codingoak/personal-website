@@ -1,6 +1,7 @@
 @import "./colors.css";
 @import "./base.css";
 @import "./utility.css";
+@import "./components/btn.css";
 @import "./components/main-header.css";
 @import "./components/main-nav.css";
 @import "./components/logo.css";
