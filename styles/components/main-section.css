@@ -8,14 +8,7 @@
   background-color: var(--color-blue-dark-trans);
 }
 
-.main-section__interests {
-  justify-content: space-around;
-  gap: 25px;
-}
-
 .main-section__contact {
-  justify-content: space-between;
-  gap: 25px;
   list-style: inside;
 }
 
@@ -31,9 +24,5 @@
 
 .main-section__tech-stack {
   text-align: center;
-  background: linear-gradient(
-    to bottom,
-    var(--color-blue-dark-trans),
-    var(--color-blue-light-trans)
-  );
+  background: linear-gradient(to bottom, var(--color-blue-dark-trans), var(--color-blue-light-trans));
 }

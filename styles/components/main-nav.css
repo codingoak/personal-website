@@ -10,15 +10,6 @@
   height: auto;
 }
 
-.main-nav__list {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.main-nav__item {
-  display: flex;
-}
-
 /* mobile */
 
 @media (max-width: 468px) {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Eicher</title>
-    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,17 +38,17 @@
       </nav>
       <!-- desktop-nav -->
       <nav class="main-nav main-nav--desktop">
-        <ul role="list" class="main-nav__list list--simple">
-          <li class="main-nav__item">
-            <a href="#interests" class="btn btn-fancy">Interests</a>
+        <ul role="list" class="list--simple flex justify-evenly">
+          <li class="flex">
+            <a href="#interests" class="btn btn-fancy main-nav__anchor">Interests</a>
           </li>
-          <li class="main-nav__item">
+          <li class="flex">
             <a href="#contact" class="btn btn-fancy">Contact</a>
           </li>
-          <li class="main-nav__item">
+          <li class="flex">
             <a href="#biography" class="btn btn-fancy">Biography</a>
           </li>
-          <li class="main-nav__item">
+          <li class="flex">
             <a href="#tech-stack" class="btn btn-fancy">Tech stack</a>
           </li>
         </ul>
@@ -58,20 +58,14 @@
         <hr class="main-header__line" />
         <h3 class="main-header__subtitle">student <span class="nowrapping">web developer</span></h3>
       </div>
-      <figure class="main-header__figure">
-        <img
-          class="main-header__img"
-          src="images/daniel-eicher.png"
-          alt="picture daniel eicher"
-          width="700"
-          height="500"
-        />
-        <figcaption class="main-header__figcaption">welcome to my web page</figcaption>
+      <figure class="figure">
+        <img class="figure__img" src="images/daniel-eicher.png" alt="picture daniel eicher" width="700" height="500" />
+        <figcaption class="figure__figcaption">welcome to my web page</figcaption>
       </figure>
     </header>
     <section class="main-section" id="interests">
       <h2>Interests</h2>
-      <ul role="list" class="main-section__interests nowrapping list--simple container--wrap">
+      <ul role="list" class="nowrapping list--simple flex flex-wrap justify-around gap-rem">
         <li>Family</li>
         <li>Nature</li>
         <li>Hiking</li>
@@ -82,7 +76,10 @@
     </section>
     <section class="main-section" id="contact">
       <h2 id="contact">Contact</h2>
-      <ul role="list" class="main-section__contact main-section__contact--desktop list--simple container--wrap">
+      <ul
+        role="list"
+        class="main-section__contact main-section__contact--desktop list--simple flex flex-wrap justify-between gap-6"
+      >
         <li><span class="bd">Phone: </span><br /><a class="hyperlink" href="tel:+34642104722">+34 642 104 722</a></li>
         <li>
           <span class="bd">Mail: </span
@@ -107,23 +104,23 @@
     </section>
     <section class="main-section main-section__tech-stack">
       <h2>Tech stack</h2>
-      <ul role="list" class="logo__list list--simple">
+      <ul role="list" class="list--simple flex flex-wrap justify-evenly gap-rem">
         <li>
           <!-- python-logo with a link to python.org -->
-          <a class="logo" href="https://www.python.org/downloads/" target="_blank">
+          <a class="hovering" href="https://www.python.org/downloads/" target="_blank">
             <img src="/images/python-logo.svg" width="32" height="32" alt="python-logo"
           /></a>
         </li>
         <li>
           <!-- kotlin-logo with a link to kotlinlang.org -->
-          <a class="logo" href="https://kotlinlang.org/" target="_blank"
+          <a class="hovering" href="https://kotlinlang.org/" target="_blank"
             ><img src="/images/kotlin-logo.svg" width="32" height="32" alt="kotlin-logo"
           /></a>
         </li>
         <li>
           <!-- javascript-logo with a link to ecma-international.org -->
           <a
-            class="logo"
+            class="hovering"
             href="https://www.ecma-international.org/publications-and-standards/standards/"
             target="_blank"
             ><img src="/images/javascript-logo.svg" width="32" height="32" alt="javascript-logo"
@@ -131,65 +128,65 @@
         </li>
         <li>
           <!-- html5-logo with a link to html5 specs on whatwg.org -->
-          <a class="logo" href="https://html.spec.whatwg.org/multipage/" target="_blank"
+          <a class="hovering" href="https://html.spec.whatwg.org/multipage/" target="_blank"
             ><img src="/images/html5-logo.svg" width="32" height="32" alt="html5-logo"
           /></a>
         </li>
         <li>
           <!-- css3-logo with a link to css3 specs on w3c.org -->
-          <a class="logo" href="https://www.w3.org/Style/CSS/specs" target="_blank"
+          <a class="hovering" href="https://www.w3.org/Style/CSS/specs" target="_blank"
             ><img src="/images/css3-logo.svg" width="32" height="32" alt="css3-logo"
           /></a>
         </li>
         <li>
           <!-- git-logo with a link to git-scm.com -->
-          <a class="logo" href="https://git-scm.com/" target="_blank"
+          <a class="hovering" href="https://git-scm.com/" target="_blank"
             ><img src="/images/git-logo.svg" width="32" height="32" alt="git-logo"
           /></a>
         </li>
         <li>
           <!-- vscode-logo with a link to visualstudio.com -->
-          <a class="logo" href="https://code.visualstudio.com/" target="_blank"
+          <a class="hovering" href="https://code.visualstudio.com/" target="_blank"
             ><img src="/images/vscode-logo.svg" width="32" height="32" alt="visualcode-logo"
           /></a>
         </li>
         <li>
           <!-- intellij idea-logo with a link to jetbrains.com -->
-          <a class="logo" href="https://www.jetbrains.com/" target="_blank"
+          <a class="hovering" href="https://www.jetbrains.com/" target="_blank"
             ><img src="/images/intellijidea-logo.svg" width="32" height="32" alt="intellij-idea-logo"
           /></a>
         </li>
         <li>
           <!-- android studio-logo with a link to android.com -->
-          <a class="logo" href="https://developer.android.com/studio" target="_blank"
+          <a class="hovering" href="https://developer.android.com/studio" target="_blank"
             ><img src="/images/androidstudio-logo.svg" width="32" height="32" alt="androidstudio-logo"
           /></a>
         </li>
       </ul>
     </section>
     <footer class="main-footer">
-      <ul role="list" class="main-footer__list list--simple">
+      <ul role="list" class="list--simple flex flex-wrap justify-center gap-vw">
         <li>
           <!-- github-logo with a link to my profil -->
-          <a class="logo" href="https://github.com/codingoak" target="_blank"
+          <a class="hovering" href="https://github.com/codingoak" target="_blank"
             ><img src="/images/github-logo.png" width="32" height="32" alt="github-logo"
           /></a>
         </li>
         <li>
           <!-- codepen-logo with a link to my profil -->
-          <a class="logo" href="https://codepen.io/codingoak" target="_blank"
+          <a class="hovering" href="https://codepen.io/codingoak" target="_blank"
             ><img src="/images/codepen-logo.png" width="32" height="32" alt="codepen-logo"
           /></a>
         </li>
         <li>
           <!-- linkedin-logo with a link to my profil -->
-          <a class="logo" href="https://www.linkedin.com/in/daniel-eicher-963844203/" target="_blank"
+          <a class="hovering" href="https://www.linkedin.com/in/daniel-eicher-963844203/" target="_blank"
             ><img src="/images/linkedin-logo.png" width="32" height="32" alt="linkedin-logo"
           /></a>
         </li>
         <li>
           <!-- facebook-logo with a link to my profil -->
-          <a class="logo" href="https://www.facebook.com/daniel.eicher.355/" target="_blank"
+          <a class="hovering" href="https://www.facebook.com/daniel.eicher.355/" target="_blank"
             ><img src="/images/facebook-logo.png" width="32" height="32" alt="facebook-logo"
           /></a>
         </li>
