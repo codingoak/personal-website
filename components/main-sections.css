@@ -1,4 +1,4 @@
-section {
+.main-sections {
   max-width: 800px;
   margin: 1rem auto;
   padding: 0 2rem 1rem;
@@ -8,14 +8,14 @@ section {
   background-color: var(--color-blue-dark-trans);
 }
 
-p {
-  font-size: 1.2rem;
-}
+/* interests */
 
 .interests-flex {
   justify-content: space-around;
   gap: 25px;
 }
+
+/* contact*/
 
 .contact-flex {
   justify-content: space-between;
@@ -29,11 +29,19 @@ p {
   }
 }
 
+/* biography */
+
+p {
+  font-size: 1.2rem;
+}
+
+/* tech stack */
+
 #tech-stack {
+  text-align: center;
   background: linear-gradient(
     to bottom,
     var(--color-blue-dark-trans),
     var(--color-blue-light-trans)
   );
-  text-align: center;
 }

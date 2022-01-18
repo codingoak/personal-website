@@ -15,26 +15,26 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <!-- mobile-nav -->
-      <nav class="nav-bar">
+      <nav class="main-nav">
         <details>
-          <summary class="nav-bar__menu-mobile">Menu</summary>
-          <ul role="list" class="utility__list-simple">
-            <li class="nav-bar__btn-mobile">
+          <summary class="main-nav__menu--mobile">Menu</summary>
+          <ul role="list" class="utility__list--simple">
+            <li class="main-nav__link--mobile">
               <a class="hyperlink hyperlink__noline" href="#interests"
                 >Interests</a
               >
             </li>
-            <li class="nav-bar__btn-mobile">
+            <li class="main-nav__link--mobile">
               <a class="hyperlink hyperlink__noline" href="#contact">Contact</a>
             </li>
-            <li class="nav-bar__btn-mobile">
+            <li class="main-nav__link--mobile">
               <a class="hyperlink hyperlink__noline" href="#biography"
                 >Biography</a
               >
             </li>
-            <li class="nav-bar__btn-mobile" v>
+            <li class="main-nav__link--mobile" v>
               <a class="hyperlink hyperlink__noline" href="#tech-stack"
                 >Tech stack</a
               >
@@ -43,46 +43,49 @@
         </details>
       </nav>
       <!-- desktop-nav -->
-      <nav class="nav-bar nav-bar__desktop">
-        <ul role="list" class="nav-bar__list-container utility__list-simple">
-          <li class="nav-bar__item">
-            <a href="#interests" class="nav-bar__btn nav-bar__anchor"
+      <nav class="main-nav main-nav__desktop">
+        <ul role="list" class="main-nav__list utility__list--simple">
+          <li class="main-nav__item">
+            <a href="#interests" class="btn__link main-nav__anchor"
               >Interests</a
             >
           </li>
-          <li class="nav-bar__item">
-            <a href="#contact" class="nav-bar__btn">Contact</a>
+          <li class="main-nav__item">
+            <a href="#contact" class="btn__link">Contact</a>
           </li>
-          <li class="nav-bar__item">
-            <a href="#biography" class="nav-bar__btn">Biography</a>
+          <li class="main-nav__item">
+            <a href="#biography" class="btn__link">Biography</a>
           </li>
-          <li class="nav-bar__item">
-            <a href="#tech-stack" class="nav-bar__btn">Tech stack</a>
+          <li class="main-nav__item">
+            <a href="#tech-stack" class="btn__link">Tech stack</a>
           </li>
         </ul>
       </nav>
       <div>
         <h1>Daniel Eicher</h1>
         <hr class="main-header__line" />
-        <h3 id="job">
+        <h3 class="main-header__subtitle">
           student <span class="utility__nowrapping">web developer</span>
         </h3>
       </div>
-      <figure>
+      <figure class="main-header__figure">
         <img
+          class="main-header__img"
           src="images/daniel-eicher.png"
           alt="picture daniel eicher"
           width="700"
           height="500"
         />
-        <figcaption>welcome to my web page</figcaption>
+        <figcaption class="main-header__figcaption">
+          welcome to my web page
+        </figcaption>
       </figure>
     </header>
-    <section id="interests">
+    <section class="main-sections" id="interests">
       <h2>Interests</h2>
       <ul
         role="list"
-        class="interests-flex utility__nowrapping utility__list-simple utility__container-wrap"
+        class="interests-flex utility__nowrapping utility__list--simple utility__container--wrap"
       >
         <li>Family</li>
         <li>Nature</li>
@@ -92,11 +95,11 @@
         <li>Reading books</li>
       </ul>
     </section>
-    <section>
+    <section class="main-sections" id="contact">
       <h2 id="contact">Contact</h2>
       <ul
         role="list"
-        class="contact-flex media-flex utility__list-simple utility__container-wrap"
+        class="contact-flex media-flex utility__list--simple utility__container--wrap"
       >
         <li>
           <span class="utility__bold">Phone: </span><br /><a
@@ -113,7 +116,7 @@
         </li>
       </ul>
     </section>
-    <section id="biography">
+    <section class="main-sections" id="biography">
       <h2>Biography</h2>
       <div>
         <p>
@@ -129,9 +132,9 @@
         </p>
       </div>
     </section>
-    <section id="tech-stack">
+    <section class="main-sections" id="tech-stack">
       <h2>Tech stack</h2>
-      <ul role="list" class="logo-container utility__list-simple">
+      <ul role="list" class="logo__list utility__list--simple">
         <li>
           <!-- python-logo with a link to python.org -->
           <a
@@ -240,7 +243,7 @@
       </ul>
     </section>
     <footer class="main-footer">
-      <ul role="list" class="main-footer__anchor-flex utility__list-simple">
+      <ul role="list" class="main-footer__list utility__list--simple">
         <li>
           <!-- github-logo with a link to my profil -->
           <a class="logo" href="https://github.com/codingoak" target="_blank"

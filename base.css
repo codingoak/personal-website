@@ -4,7 +4,7 @@
 
 body:not(bottom) {
   /* positioning */
-  margin: 8rem auto 2rem;
+  margin: 8rem auto 0;
   padding: 2rem;
 
   /* typography */
@@ -20,10 +20,8 @@ body:not(bottom) {
   background-size: cover;
 }
 
-h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
-  margin-top: 1rem;
   text-align: center;
 }

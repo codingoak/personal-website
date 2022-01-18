@@ -2,8 +2,9 @@
 @import "./base.css";
 @import "./utility.css";
 @import "./components/main-header.css";
-@import "./components/nav-bar.css";
+@import "./components/main-nav.css";
+@import "./components/btn.css";
 @import "./components/logo.css";
 @import "./components/hyperlink.css";
-@import "./components/sections.css";
+@import "./components/main-sections.css";
 @import "./components/main-footer.css";
