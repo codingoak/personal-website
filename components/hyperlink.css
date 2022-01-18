@@ -13,6 +13,6 @@
   color: var(--color-dark);
 }
 
-.hyperlink__noline {
+.hyperlink--noline {
   text-decoration: none;
 }

@@ -19,36 +19,28 @@
       <!-- mobile-nav -->
       <nav class="main-nav">
         <details>
-          <summary class="main-nav__menu--mobile">Menu</summary>
-          <ul role="list" class="utility__list--simple">
+          <summary class="main-nav--mobile">Menu</summary>
+          <ul role="list" class="list--simple">
             <li class="main-nav__link--mobile">
-              <a class="hyperlink hyperlink__noline" href="#interests"
-                >Interests</a
-              >
+              <a class="hyperlink hyperlink--noline" href="#interests">Interests</a>
             </li>
             <li class="main-nav__link--mobile">
-              <a class="hyperlink hyperlink__noline" href="#contact">Contact</a>
+              <a class="hyperlink hyperlink--noline" href="#contact">Contact</a>
             </li>
             <li class="main-nav__link--mobile">
-              <a class="hyperlink hyperlink__noline" href="#biography"
-                >Biography</a
-              >
+              <a class="hyperlink hyperlink--noline" href="#biography">Biography</a>
             </li>
             <li class="main-nav__link--mobile" v>
-              <a class="hyperlink hyperlink__noline" href="#tech-stack"
-                >Tech stack</a
-              >
+              <a class="hyperlink hyperlink--noline" href="#tech-stack">Tech stack</a>
             </li>
           </ul>
         </details>
       </nav>
       <!-- desktop-nav -->
-      <nav class="main-nav main-nav__desktop">
-        <ul role="list" class="main-nav__list utility__list--simple">
+      <nav class="main-nav main-nav--desktop">
+        <ul role="list" class="main-nav__list list--simple">
           <li class="main-nav__item">
-            <a href="#interests" class="btn__link main-nav__anchor"
-              >Interests</a
-            >
+            <a href="#interests" class="btn__link main-nav__anchor">Interests</a>
           </li>
           <li class="main-nav__item">
             <a href="#contact" class="btn__link">Contact</a>
@@ -64,9 +56,7 @@
       <div>
         <h1>Daniel Eicher</h1>
         <hr class="main-header__line" />
-        <h3 class="main-header__subtitle">
-          student <span class="utility__nowrapping">web developer</span>
-        </h3>
+        <h3 class="main-header__subtitle">student <span class="nowrapping">web developer</span></h3>
       </div>
       <figure class="main-header__figure">
         <img
@@ -76,17 +66,12 @@
           width="700"
           height="500"
         />
-        <figcaption class="main-header__figcaption">
-          welcome to my web page
-        </figcaption>
+        <figcaption class="main-header__figcaption">welcome to my web page</figcaption>
       </figure>
     </header>
     <section class="main-section" id="interests">
       <h2>Interests</h2>
-      <ul
-        role="list"
-        class="main-section__interests utility__nowrapping utility__list--simple utility__container--wrap"
-      >
+      <ul role="list" class="main-section__interests nowrapping list--simple container--wrap">
         <li>Family</li>
         <li>Nature</li>
         <li>Hiking</li>
@@ -97,65 +82,42 @@
     </section>
     <section class="main-section" id="contact">
       <h2 id="contact">Contact</h2>
-      <ul
-        role="list"
-        class="main-section__contact main-section__contact--desktop utility__list--simple utility__container--wrap"
-      >
+      <ul role="list" class="main-section__contact main-section__contact--desktop list--simple container--wrap">
+        <li><span class="bd">Phone: </span><br /><a class="hyperlink" href="tel:+34642104722">+34 642 104 722</a></li>
         <li>
-          <span class="utility__bold">Phone: </span><br /><a
-            class="hyperlink"
-            href="tel:+34642104722"
-            >+34 642 104 722</a
-          >
-        </li>
-        <li>
-          <span class="utility__bold">Mail: </span
-          ><a class="hyperlink" href="mailto:danieleicher@gmx.net"
-            ><br />danieleicher@gmx.net</a
-          >
+          <span class="bd">Mail: </span
+          ><a class="hyperlink" href="mailto:danieleicher@gmx.net"><br />danieleicher@gmx.net</a>
         </li>
       </ul>
     </section>
     <section class="main-section" id="biography">
       <h2>Biography</h2>
       <div>
-        <p>
-          In 2005 I completed my studies as an electrical installer and 2019 as
-          an electrical safety advisor with control authorization. I worked as
-          an electrician for 15 years, including seven years as an electrician
-          construction manager. I have also been working as a dispatcher and
-          office worker for five years (2007-2012).<br />
-          A few years ago I started programming with Java, Python and Kotlin as
-          a hobby. After these first steps of coding I'm currently learning with
+        <p class="main-section__text">
+          In 2005 I completed my studies as an electrical installer and 2019 as an electrical safety advisor with
+          control authorization. I worked as an electrician for 15 years, including seven years as an electrician
+          construction manager. I have also been working as a dispatcher and office worker for five years
+          (2007-2012).<br />
+          A few years ago I started programming with Java, Python and Kotlin as a hobby. After these first steps of
+          coding I'm currently learning with
           <a class="hyperlink" href="https://www.neuefische.de/">neuefische</a>
           to start my career in web development.
         </p>
       </div>
     </section>
-    <section class="main-section" id="tech-stack">
+    <section class="main-section main-section__tech-stack">
       <h2>Tech stack</h2>
-      <ul role="list" class="logo__list utility__list--simple">
+      <ul role="list" class="logo__list list--simple">
         <li>
           <!-- python-logo with a link to python.org -->
-          <a
-            class="logo"
-            href="https://www.python.org/downloads/"
-            target="_blank"
-            ><img
-              src="/images/python-logo.svg"
-              width="32"
-              height="32"
-              alt="python-logo"
+          <a class="logo" href="https://www.python.org/downloads/" target="_blank">
+            <img src="/images/python-logo.svg" width="32" height="32" alt="python-logo"
           /></a>
         </li>
         <li>
           <!-- kotlin-logo with a link to kotlinlang.org -->
           <a class="logo" href="https://kotlinlang.org/" target="_blank"
-            ><img
-              src="/images/kotlin-logo.svg"
-              width="32"
-              height="32"
-              alt="kotlin-logo"
+            ><img src="/images/kotlin-logo.svg" width="32" height="32" alt="kotlin-logo"
           /></a>
         </li>
         <li>
@@ -164,138 +126,76 @@
             class="logo"
             href="https://www.ecma-international.org/publications-and-standards/standards/"
             target="_blank"
-            ><img
-              src="/images/javascript-logo.svg"
-              width="32"
-              height="32"
-              alt="javascript-logo"
+            ><img src="/images/javascript-logo.svg" width="32" height="32" alt="javascript-logo"
           /></a>
         </li>
         <li>
           <!-- html5-logo with a link to html5 specs on whatwg.org -->
-          <a
-            class="logo"
-            href="https://html.spec.whatwg.org/multipage/"
-            target="_blank"
-            ><img
-              src="/images/html5-logo.svg"
-              width="32"
-              height="32"
-              alt="html5-logo"
+          <a class="logo" href="https://html.spec.whatwg.org/multipage/" target="_blank"
+            ><img src="/images/html5-logo.svg" width="32" height="32" alt="html5-logo"
           /></a>
         </li>
         <li>
           <!-- css3-logo with a link to css3 specs on w3c.org -->
-          <a
-            class="logo"
-            href="https://www.w3.org/Style/CSS/specs"
-            target="_blank"
-            ><img
-              src="/images/css3-logo.svg"
-              width="32"
-              height="32"
-              alt="css3-logo"
+          <a class="logo" href="https://www.w3.org/Style/CSS/specs" target="_blank"
+            ><img src="/images/css3-logo.svg" width="32" height="32" alt="css3-logo"
           /></a>
         </li>
         <li>
           <!-- git-logo with a link to git-scm.com -->
           <a class="logo" href="https://git-scm.com/" target="_blank"
-            ><img
-              src="/images/git-logo.svg"
-              width="32"
-              height="32"
-              alt="git-logo"
+            ><img src="/images/git-logo.svg" width="32" height="32" alt="git-logo"
           /></a>
         </li>
         <li>
           <!-- vscode-logo with a link to visualstudio.com -->
           <a class="logo" href="https://code.visualstudio.com/" target="_blank"
-            ><img
-              src="/images/vscode-logo.svg"
-              width="32"
-              height="32"
-              alt="visualcode-logo"
+            ><img src="/images/vscode-logo.svg" width="32" height="32" alt="visualcode-logo"
           /></a>
         </li>
         <li>
           <!-- intellij idea-logo with a link to jetbrains.com -->
           <a class="logo" href="https://www.jetbrains.com/" target="_blank"
-            ><img
-              src="/images/intellijidea-logo.svg"
-              width="32"
-              height="32"
-              alt="intellij-idea-logo"
+            ><img src="/images/intellijidea-logo.svg" width="32" height="32" alt="intellij-idea-logo"
           /></a>
         </li>
         <li>
           <!-- android studio-logo with a link to android.com -->
-          <a
-            class="logo"
-            href="https://developer.android.com/studio"
-            target="_blank"
-            ><img
-              src="/images/androidstudio-logo.svg"
-              width="32"
-              height="32"
-              alt="androidstudio-logo"
+          <a class="logo" href="https://developer.android.com/studio" target="_blank"
+            ><img src="/images/androidstudio-logo.svg" width="32" height="32" alt="androidstudio-logo"
           /></a>
         </li>
       </ul>
     </section>
     <footer class="main-footer">
-      <ul role="list" class="main-footer__list utility__list--simple">
+      <ul role="list" class="main-footer__list list--simple">
         <li>
           <!-- github-logo with a link to my profil -->
           <a class="logo" href="https://github.com/codingoak" target="_blank"
-            ><img
-              src="/images/github-logo.png"
-              width="32"
-              height="32"
-              alt="github-logo"
+            ><img src="/images/github-logo.png" width="32" height="32" alt="github-logo"
           /></a>
         </li>
         <li>
           <!-- codepen-logo with a link to my profil -->
           <a class="logo" href="https://codepen.io/codingoak" target="_blank"
-            ><img
-              src="/images/codepen-logo.png"
-              width="32"
-              height="32"
-              alt="codepen-logo"
+            ><img src="/images/codepen-logo.png" width="32" height="32" alt="codepen-logo"
           /></a>
         </li>
         <li>
           <!-- linkedin-logo with a link to my profil -->
-          <a
-            class="logo"
-            href="https://www.linkedin.com/in/daniel-eicher-963844203/"
-            target="_blank"
-            ><img
-              src="/images/linkedin-logo.png"
-              width="32"
-              height="32"
-              alt="linkedin-logo"
+          <a class="logo" href="https://www.linkedin.com/in/daniel-eicher-963844203/" target="_blank"
+            ><img src="/images/linkedin-logo.png" width="32" height="32" alt="linkedin-logo"
           /></a>
         </li>
         <li>
           <!-- facebook-logo with a link to my profil -->
-          <a
-            class="logo"
-            href="https://www.facebook.com/daniel.eicher.355/"
-            target="_blank"
-            ><img
-              src="/images/facebook-logo.png"
-              width="32"
-              height="32"
-              alt="facebook-logo"
+          <a class="logo" href="https://www.facebook.com/daniel.eicher.355/" target="_blank"
+            ><img src="/images/facebook-logo.png" width="32" height="32" alt="facebook-logo"
           /></a>
         </li>
       </ul>
       <a class="main-footer__anchor" href="#"
-        ><small
-          >&copy; Copyright 2022 by Daniel Eicher.
-          <span class="utility__nowrapping">All Rights Reserved.</span></small
-        ></a
+        ><small>&copy; Copyright 2022 by Daniel Eicher. <span class="nowrapping">All Rights Reserved.</span></small></a
       >
     </footer>
   </body>
