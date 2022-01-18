@@ -1,0 +1,20 @@
+.main-footer {
+  text-align: center;
+}
+
+.main-footer__anchor {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.main-footer__anchor:hover {
+  color: var(--color-whitish);
+  transition: all 0.25s;
+}
+
+.main-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+}

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body:not(bottom) {
+  /* positioning */
+  margin: 8rem auto 0;
+  padding: 2rem;
+
+  /* typography */
+  color: var(--color-dark);
+  font-family: "Open Sans", sans-serif;
+  font-size: 112.5%;
+  line-height: 1.5;
+
+  /* visual */
+  background-image: url(images/background-mountains.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}

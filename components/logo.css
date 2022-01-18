@@ -1,0 +1,11 @@
+.logo:hover {
+  opacity: 0.5;
+  transition: all 0.25s;
+}
+
+.logo__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+}
