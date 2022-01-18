@@ -30,7 +30,7 @@
             <li class="main-nav__link--mobile">
               <a class="hyperlink hyperlink--noline" href="#biography">Biography</a>
             </li>
-            <li class="main-nav__link--mobile" v>
+            <li class="main-nav__link--mobile">
               <a class="hyperlink hyperlink--noline" href="#tech-stack">Tech stack</a>
             </li>
           </ul>
@@ -76,16 +76,16 @@
     </section>
     <section class="main-section" id="contact">
       <h2 id="contact">Contact</h2>
-      <ul
-        role="list"
-        class="main-section__contact main-section__contact--desktop list--simple flex flex-wrap justify-between gap-6"
-      >
-        <li><span class="bd">Phone: </span><br /><a class="hyperlink" href="tel:+34642104722">+34 642 104 722</a></li>
-        <li>
-          <span class="bd">Mail: </span
-          ><a class="hyperlink" href="mailto:danieleicher@gmx.net"><br />danieleicher@gmx.net</a>
-        </li>
-      </ul>
+      <address class="main-section__contact--desktop flex flex-wrap justify-between gap-rem mb-1">
+        <div>
+          <div class="bd">Phone:</div>
+          <a class="hyperlink" href="tel:+34642104722">+34 642 104 722</a>
+        </div>
+        <div>
+          <div class="bd">Mail:</div>
+          <a class="hyperlink" href="mailto:danieleicher@gmx.net">danieleicher@gmx.net</a>
+        </div>
+      </address>
     </section>
     <section class="main-section" id="biography">
       <h2>Biography</h2>
@@ -113,8 +113,8 @@
         </li>
         <li>
           <!-- kotlin-logo with a link to kotlinlang.org -->
-          <a class="hovering" href="https://kotlinlang.org/" target="_blank"
-            ><img src="/images/kotlin-logo.svg" width="32" height="32" alt="kotlin-logo"
+          <a class="hovering" href="https://kotlinlang.org/" target="_blank">
+            <img src="/images/kotlin-logo.svg" width="32" height="32" alt="kotlin-logo"
           /></a>
         </li>
         <li>
@@ -192,8 +192,8 @@
         </li>
       </ul>
       <a class="main-footer__anchor" href="#"
-        ><small>&copy; Copyright 2022 by Daniel Eicher. <span class="nowrapping">All Rights Reserved.</span></small></a
-      >
+        ><small>&copy; Copyright 2022 by Daniel Eicher. <span class="nowrapping">All Rights Reserved.</span></small>
+      </a>
     </footer>
   </body>
 </html>

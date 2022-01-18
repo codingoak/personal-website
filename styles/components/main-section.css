@@ -8,10 +8,6 @@
   background-color: var(--color-blue-dark-trans);
 }
 
-.main-section__contact {
-  list-style: inside;
-}
-
 @media (min-width: 473px) {
   .main-section__contact--desktop {
     justify-content: space-around;

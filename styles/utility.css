@@ -2,8 +2,9 @@
   font-weight: 700;
 }
 
-.nowrapping {
-  white-space: nowrap;
+.hovering:hover {
+  opacity: 0.5;
+  transition: opacity 0.25s;
 }
 
 .list--simple[role="list"] {
@@ -11,19 +12,8 @@
   padding: 0;
 }
 
-.hovering:hover {
-  opacity: 0.5;
-  transition: opacity 0.25s;
-}
-
-/* gap */
-
-.gap-vw {
-  gap: 3vw;
-}
-
-.gap-rem {
-  gap: 1.5rem;
+.nowrapping {
+  white-space: nowrap;
 }
 
 /* flexbox */
@@ -34,6 +24,16 @@
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+/* gap */
+
+.gap-vw {
+  gap: 3vw;
+}
+
+.gap-rem {
+  gap: 1.5rem;
 }
 
 /* justify-content */
@@ -52,4 +52,10 @@
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+/* margin */
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
