@@ -10,22 +10,13 @@
   height: auto;
 }
 
-.main-nav__list {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.main-nav__item {
-  display: flex;
-}
-
-/* mobile */
-
 @media (max-width: 468px) {
   .main-nav--desktop {
     display: none;
   }
 }
+
+/* mobile */
 
 .main-nav--mobile {
   color: var(--color-orange);
@@ -34,6 +25,7 @@
   border: 1px solid var(--color-orange);
   border-radius: 3px;
   font-weight: bolder;
+  text-align: center;
 }
 
 .main-nav__link--mobile {

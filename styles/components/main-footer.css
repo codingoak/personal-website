@@ -11,10 +11,3 @@
   color: var(--color-whitish);
   transition: all 0.25s;
 }
-
-.main-footer__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3vw;
-}
