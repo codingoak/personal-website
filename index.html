@@ -13,13 +13,26 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header class="main-header">
       <!-- mobile-nav -->
       <nav class="main-nav">
         <details>
-          <summary class="main-nav--mobile">Menu</summary>
+          <summary class="main-nav--mobile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </summary>
           <ul role="list" class="list--simple">
             <li class="main-nav__link--mobile">
               <a class="hyperlink hyperlink--noline" href="#interests">Interests</a>
@@ -63,83 +76,82 @@
         <figcaption class="figure__figcaption">welcome to my web page</figcaption>
       </figure>
     </header>
-    <section class="main-section" id="interests">
-      <h2>Interests</h2>
-      <ul role="list" class="nowrapping list--simple flex flex-wrap justify-around gap-rem">
-        <li>Family</li>
-        <li>Nature</li>
-        <li>Hiking</li>
-        <li>Coding</li>
-        <li>Technology</li>
-        <li>Reading books</li>
-      </ul>
-    </section>
-    <section class="main-section" id="contact">
-      <h2 id="contact">Contact</h2>
-      <address class="main-section__contact--desktop flex flex-wrap justify-between gap-rem mb-1">
+    <main>
+      <section class="main-section" id="interests">
+        <h2>Interests</h2>
+        <ul role="list" class="nowrapping list--simple flex flex-wrap justify-around gap-rem">
+          <li>Family</li>
+          <li>Nature</li>
+          <li>Hiking</li>
+          <li>Coding</li>
+          <li>Technology</li>
+          <li>Reading books</li>
+        </ul>
+      </section>
+      <section class="main-section" id="contact">
+        <h2 id="contact">Contact</h2>
+        <address class="main-section__contact--desktop flex flex-wrap justify-between gap-rem mb-1">
+          <div>
+            <div class="bd">Phone:</div>
+            <a class="hyperlink" href="tel:+34642104722">+34 642 104 722</a>
+          </div>
+          <div>
+            <div class="bd">Mail:</div>
+            <a class="hyperlink" href="mailto:danieleicher@gmx.net">danieleicher@gmx.net</a>
+          </div>
+        </address>
+      </section>
+      <section class="main-section" id="biography">
+        <h2>Biography</h2>
         <div>
-          <div class="bd">Phone:</div>
-          <a class="hyperlink" href="tel:+34642104722">+34 642 104 722</a>
+          <p class="main-section__text">
+            A few years ago while working as an Electrician, I started programming with Python in my free time. My
+            fascination for mobile apps started to grow more and more. After that I made a switch to Java until I heard
+            about Kotlin. I have made these first steps of programming as a hobby, then I decided to learn professional
+            web development to build exiting web applications. That’s why I'm currently learning with
+            <a class="hyperlink" href="https://www.neuefische.de/">neuefische</a> to start my new career.
+          </p>
         </div>
-        <div>
-          <div class="bd">Mail:</div>
-          <a class="hyperlink" href="mailto:danieleicher@gmx.net">danieleicher@gmx.net</a>
-        </div>
-      </address>
-    </section>
-    <section class="main-section" id="biography">
-      <h2>Biography</h2>
-      <div>
-        <p class="main-section__text">
-          In 2005 I completed my studies as an electrical installer and 2019 as an electrical safety advisor /
-          inspector. I worked as an electrician for 15 years, including seven years as an electrician construction
-          manager. I have also been working as a managing clerk and office worker. (2007-2012). A few years ago I
-          started programming with Java and IntelliJ IDEA. A beginner level book later i have tried Python beacause the
-          Syntax looks simply great. In this time my fascination for mobile and web apps started to grow. So i made a
-          switch to Kotlin and Android Studio. After these first steps of programming as a hobby, I'm currently learning
-          with <a class="hyperlink" href="https://www.neuefische.de/">neuefische</a> to start my career in web
-          development.
-        </p>
-      </div>
-    </section>
-    <section class="main-section main-section__tech-stack" id="tech-stack">
-      <h2>Tech stack</h2>
-      <ul role="list" class="list--simple flex flex-wrap justify-evenly gap-rem">
-        <li>
-          <!-- html5-logo with a link to html5 specs on whatwg.org -->
-          <a class="hovering" href="https://html.spec.whatwg.org/multipage/" target="_blank"
-            ><img src="/images/html5-logo.svg" width="32" height="32" alt="html5-logo"
-          /></a>
-        </li>
-        <li>
-          <!-- css3-logo with a link to css3 specs on w3c.org -->
-          <a class="hovering" href="https://www.w3.org/Style/CSS/specs" target="_blank"
-            ><img src="/images/css3-logo.svg" width="32" height="32" alt="css3-logo"
-          /></a>
-        </li>
-        <li>
-          <!-- javascript-logo with a link to ecma-international.org -->
-          <a
-            class="hovering"
-            href="https://www.ecma-international.org/publications-and-standards/standards/"
-            target="_blank"
-            ><img src="/images/javascript-logo.svg" width="32" height="32" alt="javascript-logo"
-          /></a>
-        </li>
-        <li>
-          <!-- git-logo with a link to git-scm.com -->
-          <a class="hovering" href="https://git-scm.com/" target="_blank"
-            ><img src="/images/git-logo.svg" width="32" height="32" alt="git-logo"
-          /></a>
-        </li>
-        <li>
-          <!-- vscode-logo with a link to visualstudio.com -->
-          <a class="hovering" href="https://code.visualstudio.com/" target="_blank"
-            ><img src="/images/vscode-logo.svg" width="32" height="32" alt="visualcode-logo"
-          /></a>
-        </li>
-      </ul>
-    </section>
+      </section>
+      <section class="main-section main-section__tech-stack" id="tech-stack">
+        <h2>Tech stack</h2>
+        <ul role="list" class="list--simple flex flex-wrap justify-evenly gap-rem">
+          <li>
+            <!-- html5-logo with a link to html5 specs on whatwg.org -->
+            <a class="hovering" href="https://html.spec.whatwg.org/multipage/" target="_blank"
+              ><img src="/images/html5-logo.svg" width="32" height="32" alt="html5-logo"
+            /></a>
+          </li>
+          <li>
+            <!-- css3-logo with a link to css3 specs on w3c.org -->
+            <a class="hovering" href="https://www.w3.org/Style/CSS/specs" target="_blank"
+              ><img src="/images/css3-logo.svg" width="32" height="32" alt="css3-logo"
+            /></a>
+          </li>
+          <li>
+            <!-- javascript-logo with a link to ecma-international.org -->
+            <a
+              class="hovering"
+              href="https://www.ecma-international.org/publications-and-standards/standards/"
+              target="_blank"
+              ><img src="/images/javascript-logo.svg" width="32" height="32" alt="javascript-logo"
+            /></a>
+          </li>
+          <li>
+            <!-- git-logo with a link to git-scm.com -->
+            <a class="hovering" href="https://git-scm.com/" target="_blank"
+              ><img src="/images/git-logo.svg" width="32" height="32" alt="git-logo"
+            /></a>
+          </li>
+          <li>
+            <!-- vscode-logo with a link to visualstudio.com -->
+            <a class="hovering" href="https://code.visualstudio.com/" target="_blank"
+              ><img src="/images/vscode-logo.svg" width="32" height="32" alt="visualcode-logo"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer class="main-footer">
       <ul role="list" class="list--simple flex flex-wrap justify-center gap-vw">
         <li>
