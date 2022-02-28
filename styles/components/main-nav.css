@@ -20,12 +20,10 @@
   details > summary,
   ul {
     display: block;
-    text-align: center;
   }
 
-  .list {
+  .hamburger {
     margin-bottom: -15px;
-    border: 1px solid var(--color-orange);
   }
 }
 
