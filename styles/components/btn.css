@@ -14,6 +14,7 @@
   text-decoration: none;
   color: var(--color-orange);
   transition: all 0.25s;
+  animation: bounceIn 1.5s;
 }
 
 .btn-fancy:hover {
