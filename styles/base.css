@@ -15,7 +15,7 @@ body:not(bottom) {
 
   /* typography */
   color: var(--color-dark);
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
 
@@ -29,6 +29,6 @@ body:not(bottom) {
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
